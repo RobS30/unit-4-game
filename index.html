@@ -5,37 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Crystal Collector Game</title>
-    <!-- need to include css clear, css file, -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
     <script src = https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
-<body>
+<body background="assets/images/pexels-photo-2397414.jpeg" id=backgroundImage>
 
-    <header>The Crystal Collector Game</header>
-    
-<div> instructions go here
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8" id="instructionsDiv">
+                <h1>The Crystal Collector Game</h1>
+                <div class="row">
+                    <div class="col-sm-12">Four crystals with randomly generated values are below.  Your goal is to match the computer's number without going over.  The tricky part?  The crystal's values are only revealed once you click on them.  Good Luck!</div>
+                    <div class="col-sm-12 crystalsDiv">
+                                <div>
+                                    <img src="assets/images/blue_gem.jpg" id="blueCrystal">
+                                    <img src="assets/images/green gem.jpg" id="greenCrystal">
+                                    <img src="assets/images/red gem.jpg" id="redCrystal">
+                                    <img src="assets/images/yellow gem.jpg" id="yellowCrystal">
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h3>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title" class="statFontHeader">Stats</h5>
+                            <div id="compsNumberDiv" class="statFont"> Computer's Number:</div>
+                            <div id= "winsDiv" class="statFont"> Wins: 0</div>
+                            <div id= "lossesDiv" class="statFont"> Losses: 0</div>
+                            <div id="playersScore" class="statFont"> Player's Current Score: 0</div>
+                            
+                        </div>
+                    </div>
+                </h3>
+            </div>
+        </div>
 
-<div id="compsNumberDiv"> Computer's Number:
-</div>
-
-<div id= "winsDiv"> Wins: 0
-</div>
-
-<div id= "lossesDiv"> Losses: 0
     </div>
 
-<div> 4 crystals
-    <img src="assets/images/blue_gem.jpg" id="blueCrystal">
-    <img src="assets/images/green gem.jpg" id="greenCrystal">
-    <img src="assets/images/red gem.jpg" id="redCrystal">
-    <img src="assets/images/yellow gem.jpg" id="yellowCrystal">
-</div>
+    
 
-<div id="playersScore"> 
-    Player's Current Score: 0
-</div>
+
+
+
+
 
 </body>
 </html>

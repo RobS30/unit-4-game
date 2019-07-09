@@ -1,0 +1,35 @@
+body{
+    margin-top: 300px;
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    border: 2px solid black;
+    opacity: .7;
+}
+
+.crystalsDiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.statFont {
+    font-size: 20px;
+}
+
+.statFontHeader {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.card-title{
+    font-size: 30px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+#instructionsDiv {
+    margin-top: 20px;
+}
